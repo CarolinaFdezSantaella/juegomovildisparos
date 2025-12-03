@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders Retro - Juego de Disparos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de Inicio -->
+    <div id="start-menu" class="menu">
+        <div class="menu-content">
+            <h1 class="game-title">SPACE INVADERS</h1>
+            <h2 class="subtitle">RETRO 80s</h2>
+            <p class="instructions">
+                ← → MOVER NAVE<br>
+                ESPACIO DISPARAR<br>
+                P / ESC PAUSAR
+            </p>
+            <button id="start-btn" class="retro-btn">INICIAR JUEGO</button>
+            <p class="credits">© 2024 RETRO GAMES</p>
+        </div>
+    </div>
+
+    <!-- Menú de Pausa -->
+    <div id="pause-menu" class="menu hidden">
+        <div class="menu-content">
+            <h1 class="pause-title">PAUSA</h1>
+            <button id="resume-btn" class="retro-btn">CONTINUAR</button>
+            <button id="restart-pause-btn" class="retro-btn">REINICIAR</button>
+            <button id="quit-btn" class="retro-btn">MENÚ PRINCIPAL</button>
+        </div>
+    </div>
+
+    <!-- Menú de Victoria -->
+    <div id="victory-menu" class="menu hidden">
+        <div class="menu-content victory">
+            <h1 class="victory-title">¡VICTORIA!</h1>
+            <p class="victory-text">HAS COMPLETADO LOS 10 NIVELES</p>
+            <p id="final-score" class="score-text">PUNTUACIÓN: 0</p>
+            <button id="play-again-btn" class="retro-btn">JUGAR DE NUEVO</button>
+            <button id="victory-menu-btn" class="retro-btn">MENÚ PRINCIPAL</button>
+        </div>
+    </div>
+
+    <!-- Menú de Derrota -->
+    <div id="defeat-menu" class="menu hidden">
+        <div class="menu-content defeat">
+            <h1 class="defeat-title">GAME OVER</h1>
+            <p id="defeat-level" class="defeat-text">NIVEL ALCANZADO: 1</p>
+            <p id="defeat-score" class="score-text">PUNTUACIÓN: 0</p>
+            <button id="retry-btn" class="retro-btn">REINTENTAR</button>
+            <button id="defeat-menu-btn" class="retro-btn">MENÚ PRINCIPAL</button>
+        </div>
+    </div>
+
+    <!-- Área de Juego -->
+    <div id="game-container" class="hidden">
+        <div id="game-hud">
+            <div class="hud-item">
+                <span class="hud-label">NIVEL</span>
+                <span id="level" class="hud-value">1</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">PUNTOS</span>
+                <span id="score" class="hud-value">0</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">VIDAS</span>
+                <span id="lives" class="hud-value">❤❤❤</span>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
