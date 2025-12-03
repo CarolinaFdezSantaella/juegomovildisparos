@@ -354,7 +354,7 @@ export default function App() {
     }
 
     const gameLoop = () => {
-      const now = performance.now();
+      const now = Date.now();
       if (now - lastUpdateRef.current >= 16) { // ~60fps
         updateGame();
         lastUpdateRef.current = now;
@@ -903,11 +903,11 @@ const styles = StyleSheet.create({
   },
   moveControls: {
     flexDirection: 'row',
-    gap: 10,
+    columnGap: 10,
   },
   actionControls: {
     flexDirection: 'row',
-    gap: 10,
+    columnGap: 10,
   },
   controlBtn: {
     width: 60,
