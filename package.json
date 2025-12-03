@@ -1,0 +1,28 @@
+{
+  "name": "juegomovildisparos",
+  "version": "1.0.0",
+  "description": "Space Invaders Retro - Juego de Disparos",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "keywords": ["game", "expo", "react-native", "space-invaders"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expo": "^54.0.25",
+    "expo-status-bar": "^3.0.8",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-native": "^0.82.1",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^5.9.3"
+  }
+}
